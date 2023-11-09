@@ -1,0 +1,128 @@
+.foodCon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.foodCon div {
+    text-align: center;
+}
+
+.foodCon div h5 {
+    font-family: 'Pacifico', cursive;
+    color: var(--primary);
+    font-weight: bolder;
+    position: relative;
+}
+
+.foodCon div h5::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    left: 25%;
+    margin-top: -1px;
+    background: var(--primary);
+}
+
+.foodCon div h5::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: 25%;
+    margin-top: -1px;
+    background: var(--primary);
+}
+
+.foodCon div h1 {
+    font-weight: bolder;
+}
+
+.meal {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(193, 196, 203, 0.7);
+}
+
+.meal a {
+    display: flex;
+    height: fit-content;
+}
+
+.meal a .icon {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.meal a div {
+    padding: 20px;
+    margin-right: 5px;
+}
+
+.meal a div>* {
+    text-align: start;
+    margin-bottom: -5px;
+    color: #000;
+
+
+}
+
+.meal a div h6 {
+    font-weight: bold;
+}
+
+/* menu start */
+.menuCon {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.food-con {
+    display: flex;
+    width: 600px;
+    margin: 30px 10px;
+    padding: 5px;
+    height: 90px;
+}
+
+.food-con div img {
+    border-radius: 7%;
+    -webkit-border-radius: 7%;
+    -moz-border-radius: 7%;
+    -ms-border-radius: 7%;
+    -o-border-radius: 7%;
+}
+
+.con-name {
+    width: 100%;
+    margin: 0 7px;
+    padding: 5px;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    border-bottom: 1px solid rgba(193, 196, 203, 0.7);
+
+}
+
+.name h5 {
+    font-weight: bolder;
+}
+
+.con-name p {
+    color: rgba(0, 0, 0, .7);
+}
+
+.price {
+    color: var(--primary);
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap');
+
+
+:root {
+  --primary: #FEA116;
+  --light: #F1F8FF;
+  --dark: #0F172B;
+}
+
+* {
+  /* font-family: 'Nunito Sans', sans-serif; */
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  transition: all 05.s ease-in-out;
+  -webkit-transition: all 05.s ease-in-out;
+  -moz-transition: all 05.s ease-in-out;
+  -ms-transition: all 05.s ease-in-out;
+  -o-transition: all 05.s ease-in-out;
+}
+
+*::selection {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+body {
+  background-color: var(--light);
+}
+
+/* [data-theme="dark"] {
+  --font: #fff;
+  background-image: var(--dark);
+  color: var(--font);
+}
+
+[data-theme="light"] {
+  --font: #000;
+  background-image: var(--light);
+ color: #000; 
+} */

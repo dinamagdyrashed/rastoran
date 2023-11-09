@@ -1,0 +1,39 @@
+.allCards {
+    display: flex;
+    margin: 70px 15px;
+    gap: 2px;
+    /* background-color: #fff; */
+}
+
+.card {
+    background-color: #fff;
+    padding: 40px 40px;
+    margin: 5px;
+    border: none;
+}
+
+:root {
+    --secPrimary: #FEA116;
+}
+
+.card:hover {
+    --secPrimary: #fff;
+    background-color: var(--primary);
+    color: #fff;
+    transition: all ease-in-out .5s !important;
+    -webkit-transition: all ease-in-out .5s !important;
+    -moz-transition: all ease-in-out .5s !important;
+    -ms-transition: all ease-in-out .5s !important;
+    -o-transition: all ease-in-out .5s !important;
+}
+
+.card>* {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card .icon {
+    color: var(--secPrimary);
+    width: 50px;
+    height: 50px;
+}

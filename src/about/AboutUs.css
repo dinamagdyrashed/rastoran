@@ -1,0 +1,77 @@
+.aboutCon {
+    display: flex;
+}
+
+.imageCon {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imageCon div {
+    margin: 10px;
+    width: 47%;
+}
+
+.imageCon div img {
+    width: 100%;
+}
+
+#two {
+    width: 80%;
+    margin-top: 20%;
+}
+
+#three {
+    width: 80%;
+    margin-left: 20%;
+}
+
+.aboutText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.title,
+.caption,
+.counter div h6 {
+    font-weight: bold;
+}
+
+.txt {
+    color: rgba(0, 0, 0, .7);
+}
+
+.title {
+    font-family: 'Pacifico', cursive;
+    color: var(--primary);
+}
+
+.counterCon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    border-left: 7px solid var(--primary);
+}
+
+.num {
+    margin: 10px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: var(--primary);
+
+}
+
+.counter div {
+    margin: 10px;
+}
+
+.aboutText div .botn {
+    margin-top: 30px;
+}

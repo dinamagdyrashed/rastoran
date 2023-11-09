@@ -1,0 +1,49 @@
+.main {
+    background-color: #fefefe;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contain {
+    display: flex;
+    background: linear-gradient(rgba(15, 23, 43, .9),
+            rgba(15, 23, 43, .9)), url('../../public/images/bg-hero.jpg');
+    height: 800px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    width: 100%;
+    margin-right: 60px;
+    padding-right: 20px;
+}
+
+.text {
+    margin: 20px 10px 20px 40px;
+    width: 60%;
+}
+
+.text h1 {
+    font-weight: bolder;
+}
+
+.imgCon {
+    width: 120%;
+}
+
+.imgCon img {
+    animation: rotation 20s infinite linear;
+    -webkit-animation: rotation 50s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
