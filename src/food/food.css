@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .foodCon div {
@@ -16,7 +17,7 @@
     position: relative;
 }
 
-.foodCon div h5::before {
+#line::before {
     position: absolute;
     content: "";
     width: 45px;
@@ -27,7 +28,7 @@
     background: var(--primary);
 }
 
-.foodCon div h5::after {
+#line::after {
     position: absolute;
     content: "";
     width: 45px;
@@ -51,6 +52,7 @@
 .meal a {
     display: flex;
     height: fit-content;
+    border-bottom: 3px solid transparent;
 }
 
 .meal a .icon {
@@ -76,6 +78,41 @@
     font-weight: bold;
 }
 
+@media (max-width: 550px) {
+    .foodCon div h1 {
+        font-size: 25px;
+    }
+
+    .meal a .icon {
+        margin-top: 5px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .meal a div {
+        padding: 10px;
+        margin-right: 5px;
+    }
+
+    .meal a div>* {
+        font-size: 15px;
+
+
+    }
+
+    #line::before {
+
+        left: 15%;
+
+    }
+
+    #line::after {
+
+        right: 15%;
+
+    }
+}
+
 /* menu start */
 .menuCon {
     width: 95%;
@@ -83,6 +120,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 3px;
+    justify-content: center;
 }
 
 .food-con {
@@ -125,4 +163,31 @@
 
 .price {
     color: var(--primary);
+}
+
+.meal .active {
+    border-bottom: 3px solid var(--primary);
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+@media (max-width: 1280px) {
+    .food-con {
+        width: 500px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .food-con {
+        width: 450px;
+    }
+}
+
+@media (max-width: 950px) {
+    .food-con {
+        width: 90%;
+    }
 }

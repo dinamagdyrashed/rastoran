@@ -8,7 +8,7 @@ const Service = () => {
             <MainTemp title='Services' />
             <div className='foodCon'>
                 <div>
-                    <h5>Food Menu</h5>
+                    <h5 className='line'>Food Menu</h5>
                     <h1>Most Popular Items</h1></div>
             </div>
             <Cards />

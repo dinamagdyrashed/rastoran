@@ -1,0 +1,134 @@
+.swiper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.swip-con {
+    padding: 15px;
+    background-color: #fff;
+    width: 48%;
+    margin: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.swip-con:hover {
+    background-color: var(--primary);
+    color: #fff;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.swip-con p {
+    font-size: 17px;
+}
+
+.swip-icon {
+    width: 40px;
+    height: 40px;
+    color: var(--primary);
+}
+
+.swip-con:hover .swip-icon {
+    color: #fff;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.term-pic {
+    display: flex;
+}
+
+.term-pic img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.line::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 3px;
+    top: 50%;
+    left: 15%;
+    margin-top: -1px;
+    background: var(--primary);
+}
+
+.line::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 3px;
+    top: 50%;
+    right: 15%;
+    margin-top: -1px;
+    background: var(--primary);
+}
+
+@media (max-width: 1024px) {
+    .swip-con {
+
+        width: 42%;
+
+    }
+}
+
+@media (max-width: 912px) {
+    .line::before {
+
+        left: 10%;
+
+    }
+
+    .line::after {
+
+        right: 10%;
+
+    }
+}
+
+@media (max-width: 670px) {
+    .line::before {
+        left: 5%;
+    }
+
+    .line::after {
+        right: 5%;
+    }
+
+    .swip-con {
+        width: 80%;
+    }
+}
+
+@media (max-width: 670px) {
+    .line::before {
+        left: -15%;
+    }
+
+    .line::after {
+        right: -15%;
+    }
+
+
+}

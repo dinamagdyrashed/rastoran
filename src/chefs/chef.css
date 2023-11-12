@@ -1,0 +1,163 @@
+.chef-con {
+    width: 95%;
+    margin: 30px auto;
+    /* height: 600px; */
+    display: flex;
+    justify-content: space-between;
+    min-height: 420px;
+    flex-wrap: wrap;
+
+}
+
+.chef-card {
+    overflow: hidden;
+    width: 310px;
+    text-align: center;
+    position: relative;
+    padding: 15px;
+    height: 330px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.line-chef::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 3px;
+    top: 50%;
+    left: 10%;
+    margin-top: -1px;
+    background: var(--primary);
+}
+
+.line-chef::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 3px;
+    top: 50%;
+    right: 10%;
+    margin-top: -1px;
+    background: var(--primary);
+}
+
+.chef-card:hover {
+    height: 384px;
+    transition: .5s !important;
+    -webkit-transition: .5s !important;
+    -moz-transition: .5s !important;
+    -ms-transition: .5s !important;
+    -o-transition: .5s !important;
+}
+
+.chef-card:hover .chef-photo img {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.chef-photo {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.chef-photo img {
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+
+.social-con>* {
+    cursor: pointer;
+    width: 40px;
+    height: 50px;
+    padding: 3px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    background-color: var(--primary);
+    color: #fff;
+    margin: 5px;
+}
+
+@media (max-width: 1280px) {
+    .chef-con {
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+    .chef-card {
+
+        width: 310px;
+        height: 320px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .chef-con {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .chef-card {
+        width: 350px;
+        height: 350px;
+    }
+
+    .chef-card:hover {
+        height: 420px;
+    }
+
+    .line-chef::before {
+
+        left: 5%;
+
+    }
+
+    .line-chef::after {
+
+        right: 5%;
+
+    }
+}
+
+@media (max-width: 867px) {
+    .line-chef::before {
+
+        left: 0;
+
+    }
+
+    .line-chef::after {
+
+        right: 0;
+
+    }
+}
+
+@media (max-width: 540px) {
+    .line-chef::before {
+
+        left: -25%;
+
+    }
+
+    .line-chef::after {
+
+        right: -25%;
+
+    }
+}

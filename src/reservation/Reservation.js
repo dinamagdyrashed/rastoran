@@ -3,17 +3,20 @@ import './reservation.css'
 import { useEffect } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import { useNavigate } from 'react-router-dom'
 
 
 const Reservation = () => {
     useEffect(() => {
         Aos.init()
     }, [])
+    const navigate = useNavigate();
+
     return (
         <div>
             <div className='reserv'>
-                <img src='./images/video.jpg' alt='form' data-aos="fade-down-left" data-aos-delay="300" />
-                <div className='form' data-aos="fade-down-right" data-aos-delay="300">
+                <img src='./images/video.jpg' alt='form' data-aos="fade-down-right" data-aos-delay="300" />
+                <div className='form ' data-aos="fade-down-left" data-aos-delay="300">
                     <h5 className='title'>Reservation</h5>
                     <h1 className='caption'>Book A Table Online</h1>
                     <form>
@@ -23,13 +26,13 @@ const Reservation = () => {
                         </div>
                         <div className='txt'>
                             <input type='text' placeholder='Date' />
-                            <input type='text' placeholder='State' />
+                            <input type='text' placeholder='Indviduals' />
                         </div>
-                        <div>
+                        <div >
                             <textarea type='text' placeholder='Special Raquestes' />
                         </div>
                         <div>
-                            <button className='botn'>Book Now</button>
+                            <button className='botn' onClick={() => navigate("booking")}>Book Now</button>
                         </div>
                     </form>
                 </div>

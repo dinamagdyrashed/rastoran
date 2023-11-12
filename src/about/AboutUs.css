@@ -1,15 +1,16 @@
 .aboutCon {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
 }
 
-.imageCon {
+
+
+.direct {
     display: flex;
-    flex-wrap: wrap;
-}
-
-.imageCon div {
     margin: 10px;
-    width: 47%;
+    gap: 15px;
 }
 
 .imageCon div img {
@@ -26,7 +27,9 @@
     margin-left: 20%;
 }
 
+
 .aboutText {
+    width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,4 +77,58 @@
 
 .aboutText div .botn {
     margin-top: 30px;
+}
+
+@media (max-width: 820px) {
+    .caption {
+        font-size: 25px;
+    }
+
+    .txt {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutCon {
+        flex-wrap: wrap;
+    }
+
+    .aboutText {
+        width: 90%;
+    }
+}
+
+@media (max-width: 450px) {
+    .caption {
+        font-size: 20px;
+    }
+
+    .txt {
+        font-size: 12px;
+    }
+
+    .aboutText {
+        width: 80%;
+    }
+
+    .counter {
+        width: 40%;
+
+    }
+
+    #iconn {
+        width: 20px;
+    }
+
+    .counter div>* {
+        font-size: 12px;
+    }
+
+    .num {
+        margin: 30px 5px 5px 5px;
+
+        font-size: 25px;
+
+    }
 }

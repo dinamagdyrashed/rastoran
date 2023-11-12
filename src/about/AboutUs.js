@@ -12,16 +12,18 @@ const AboutUs = () => {
         <div className='aboutCon'>
             <div className='about'>
                 <div className='imageCon'>
-                    <div data-aos='fade-down-right'><img src='./images/about-1.jpg' alt='ddd' /></div>
-                    <div data-aos='fade-down-left'><img src='./images/about-2.jpg' id='two' alt='ddd' /></div>
-                    <div data-aos='fade-up-right'><img src='./images/about-3.jpg' id='three' alt='dd' /></div>
-                    <div data-aos='fade-up-left'><img src='./images/about-4.jpg' alt='dd' /></div>
+                    <div className='direct'>
+                        <div data-aos='zoom-in' data-aos-delay="400"><img src='./images/about-1.jpg' alt='ddd' /></div>
+                        <div data-aos='zoom-in' data-aos-delay="800"><img src='./images/about-2.jpg' id='two' alt='ddd' /></div></div>
+                    <div className='direct'>
+                        <div data-aos='zoom-in' data-aos-delay="600"><img src='./images/about-3.jpg' id='three' alt='dd' /></div>
+                        <div data-aos='zoom-in' ><img src='./images/about-4.jpg' alt='dd' /></div></div>
                 </div>
             </div>
             <div className='aboutText'>
-                <div data-aos='fade-down'>
+                <div data-aos='fade-left' data-aos-delay="400">
                     <h5 className='title'>About Us</h5>
-                    <h1 className='caption'>Welcome to <FaUtensils className='icon' id='icon' /> Restoran</h1>
+                    <h1 className='caption'>Welcome to <FaUtensils className='icon' id='iconn' /> Restoran</h1>
                     <p className='txt'>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum
                         et lorem et sit, sed stet lorem sit.
                     </p>

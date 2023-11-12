@@ -7,3 +7,35 @@
     height: 500px;
     color: #fff;
 }
+
+.temp-con div h1 {
+    text-align: center;
+}
+
+.little {
+    text-align: center;
+}
+
+.little a {
+    color: var(--primary);
+    margin: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.little:last-child {
+    color: #fff;
+}
+
+.little a:hover {
+    color: var(--primary);
+}
+
+.frame {
+    width: 50%;
+}
+
+.from {
+    background-color: #fff !important;
+    color: #000 !important;
+}
