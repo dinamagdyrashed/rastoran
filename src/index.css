@@ -12,7 +12,8 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 20px;
   margin: 0;
-  /* overflow: hidden; */  padding: 0;
+  /* overflow: hidden; */
+  padding: 0;
   box-sizing: border-box;
   text-transform: capitalize;
   transition: all 05.s ease-in-out;
@@ -29,6 +30,7 @@
 
 body {
   background-color: #F1F8FF;
+  overflow-x: hidden;
 }
 
 /* [data-theme="dark"] {
