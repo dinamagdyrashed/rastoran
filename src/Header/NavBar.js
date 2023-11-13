@@ -15,7 +15,7 @@ const NavBar = () => {
                     <h1>Restaron</h1>
                 </a>
                 <input type='checkbox' id='check' />
-                <label for='check'>
+                <label htmlFor='check'>
                     <FaBars id='bars' />
                     <FaTimes id='cancel' />
                 </label>
